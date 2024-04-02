@@ -1,0 +1,10 @@
+2000 Andrei 2
+2  Popescu 50  2
+12345 Bannabread 20 3 3 faina oua banane
+12346 Amandina 10 5 4 faina oua lapte Cacao
+3  Ionescu 35   1
+12347 Ecler 15 10 4 faina oua lapte Vanilie
+3
+12345 Bannabread 20 75 3 faina oua banane
+12346 Amandina 10 60 4 faina oua lapte Cacao
+12347 Ecler 15 90 4 faina oua lapte Vanilie
