@@ -65,7 +65,7 @@ public:
 
     bool operator==( const Prajitura& other)
     {
-        return codBare==other.codBare && denumire==other.denumire && pret==other.pret;
+        return codBare==other.codBare && denumire==other.denumire;
     }
     /*~Prajitura()
     {

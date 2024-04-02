@@ -67,11 +67,11 @@ void Vanzator:: ActualizeazaStoc()
     for(auto i: clienti)
     {
         std::vector<Prajitura> prajiClient=i.GetPraji();
-        for (auto j:prajiClient)
+        for (auto &j:prajiClient)
         {
-            for(auto k:prajistoc)
+            for(auto &k:prajistoc)
             {
-                if(j.GetDenumire()==k.GetDenumire()) j.ScadeStoc(k.GetStoc());
+                if(j==k) k.ScadeStoc(j.GetStoc());
             }
         }
     }
