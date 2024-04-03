@@ -21,6 +21,7 @@ std:: istream& operator >>(std::istream& is, Client& c)
     }
     return is;
 }
+//Imi retine prajiturile cumparate de un client care un pret minim dat.
 std::vector<Prajitura>Client::  PrajituriCumparate(const int PretMin)
 {
     std::vector<Prajitura> PrajiCumparate;
@@ -32,6 +33,7 @@ std::vector<Prajitura>Client::  PrajituriCumparate(const int PretMin)
     }
     return PrajiCumparate;
 }
+// Daca un client a cumparat o anumita prajitura, se va afisa codul si numele sau
 void Client:: Achizitie(const std::string& NumPraji)
 {
     for (auto it=prajituri.begin(); it!=prajituri.end();it++)
@@ -39,6 +41,7 @@ void Client:: Achizitie(const std::string& NumPraji)
         if(it->GetDenumire()==NumPraji) std::cout<<NrClient<<" "<<nume<<std::endl;
     }
 }
+
 void Client:: NumeClient (const char lit)
 {
     if(nume[0]==lit)

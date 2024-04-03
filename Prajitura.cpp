@@ -16,7 +16,7 @@ std:: istream& operator >>(std::istream& is, Prajitura& p)
     is>>p.pret;
     is>>p.stoc;
     is>>p.nringrediente;
-    p.ingrediente.clear();
+    p.ingrediente.clear(); // ca sa nu imi suprascrie ingredientele
     for (auto it =0; it < p.nringrediente; it++)
     {
         std::string ingredient;
@@ -30,6 +30,7 @@ bool Prajitura:: GamaDeLux(const int PretDeLux)
     if(pret>=PretDeLux) return true;
     else return false;
 }
+
 void Prajitura:: ContineCod(const int cod)
 {
     int cifre=1, copie=cod, ok=0;

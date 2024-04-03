@@ -62,7 +62,7 @@ public:
     {
         return denumire;
     }
-
+    // Functia verifica daca 2 prajituri sunt la fel.
     bool operator==( const Prajitura& other)
     {
         return codBare==other.codBare && denumire==other.denumire;
@@ -78,6 +78,7 @@ public:
     void ContineCod(const int cod);
     bool GamaDeLux(const int PretDeLux);
     void EsteVegan( const std::vector<std::string> ingrediente_fruct);
+    //Acesta functie ma ajuta sa actualizez stocul in clasa Vanzator
     int ScadeStoc(int StocNou);
 
 private:
